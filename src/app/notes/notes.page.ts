@@ -10,6 +10,9 @@ import { Diet } from '../services/data.service';
 })
 export class NotesPage implements OnInit {
 notes = {} as Diet;
+public myDate;
+
+
   constructor(
     public dietServe: DietService,
     public router: Router
@@ -19,6 +22,7 @@ notes = {} as Diet;
   }
 
   Save(notes){
-    notes.id = "1";
-    this.dietServe.createNote(notes.id,notes);
+    var dateFormat = this.myDate.split('T')[0]; 
+    this.notes.date = dateFormat;
+    this.dietServe.createNote(notes);
   }}

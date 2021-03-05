@@ -11,7 +11,7 @@
   <div class="ion-padding">
      <ion-item>
       <ion-label class="ion-text-center">Start Date</ion-label>
-        <ion-datetime value="2021-01-01" placeholder="Select Date"></ion-datetime>
+        <ion-datetime [(ngModel)]="myDate" display-format="DD/MM/YYYY"></ion-datetime>
       </ion-item>
 
 <ion-list>
@@ -73,7 +73,7 @@
   </ion-radio-group>
 </ion-list>
 <ion-list>
-  <ion-radio-group name="auto" value="dinner">
+  <ion-radio-group  [(ngModel)]="notes.dinner">
     <ion-list-header>
       <ion-label>Dinner</ion-label>
     </ion-list-header>

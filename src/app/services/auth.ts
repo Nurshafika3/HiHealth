@@ -37,8 +37,8 @@ export class AuthenticateService{
             public ngFirestore:AngularFirestore
         ){}
         
-        createNote(id,note){
-            return this.ngFirestore.collection(this.collectionName).doc(id).set(note);
+        createNote(note){
+            return this.ngFirestore.collection(this.collectionName).doc().set(note);
         }
     
         readNote(){

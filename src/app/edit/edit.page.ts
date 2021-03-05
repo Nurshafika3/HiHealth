@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { DietService } from '../services/auth';
+import { Diet } from '../services/data.service';
 
 @Component({
   selector: 'app-edit',
@@ -6,10 +9,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./edit.page.scss'],
 })
 export class EditPage implements OnInit {
+  notes = {} as Diet;
+  id: any;
+  constructor(
+    public dietServe: DietService,
+    public router: Router,
+    private actRoute: ActivatedRoute,
 
-  constructor() { }
+  ) {
+    this.id = this.actRoute.snapshot.paramMap.get("id");
+  }
+
+   
 
   ngOnInit() {
   }
-
+  Update(id,notes){
+    this.dietServe.updateNote(id,notes);
+  }
 }
+
