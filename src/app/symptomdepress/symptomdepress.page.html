@@ -1,0 +1,90 @@
+<ion-header>
+  <ion-toolbar>
+  	 <ion-buttons slot="start">
+    <ion-back-button color="dark" defaultHref="depression"></ion-back-button></ion-buttons>
+    
+    </ion-toolbar>
+</ion-header>
+<ion-content padding class="background">
+  <ion-card>
+    <img src="assets/depression5.jpg"/>
+    <ion-card-header>
+        <ion-card-title>Symptoms/
+          Signs</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ul>
+          <li>Persistent feelings of sadness, anxiety, anger, irritability, discontent, or "emptiness"</li>
+          <li>Feelings of hopelessness or pessimism</li>
+          <li>Feelings of worthlessness, helplessness, or excessive guilt</li>
+          <li>Loss of interest or inability to feel pleasure in hobbies and activities that individuals once enjoyed, including sex</li>
+          <li>Lack of motivation</li>
+          <li>Social isolation (Avoid interactions with family/friends</li>
+          <li>Sleep Changes</li>
+          <li>Appetite Changes</li>
+          <li>Fatigue/Tiredness</li>
+          <li>Crying Spells</li>
+          <li>Thoughts of death or suicide, suicide attempts
+          </li> 
+          <li>Inability to concentrate, remember things, make decisions, or to handle responsibilities</li>
+          <li>Persistent physical symptoms that do not respond to treatment, such as repeated headaches, digestive disorders, and/or chronic pain</li>
+         <br></ul>
+      </ion-card-content>
+    </ion-card>
+    <h1 class="ion-text-center">Symptoms according gender</h1>
+    <ion-slides [options]="slideOpt">
+      <ion-slide>
+        <ion-card >
+          <ion-card-header>
+            <ion-card-title>Symptoms/
+              Signs For Men</ion-card-title>
+          </ion-card-header>
+          <img src="assets/men.jpg"/>
+          <ion-card-content>
+            <p>Men with depression are more likely to experience low energy, irritability, and anger, sometimes to the point of inflicting pain on others. Men with depression are also more likely to exhibit sleep problems, a loss of interest in work or hobbies, and substance abuse.</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card >
+          <ion-card-header>
+            <ion-card-title>Symptoms/
+              Signs For Women</ion-card-title>
+          </ion-card-header>
+          <img src="assets/women.jpg"/>
+          <ion-card-content>
+            <p>Women may more often have a seasonal pattern to depression, as well as symptoms of atypical depression (for example, eating or sleeping too much, carbohydrate craving, weight gain, a heavy feeling in the arms and legs, mood worsening in the evenings, and trouble getting to sleep). </p>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card >
+          <ion-card-header>
+            <ion-card-title>Symptoms/
+              Signs For Teenagers</ion-card-title>
+          </ion-card-header>
+          <img src="assets/teen.jpg"/>
+          <ion-card-content>
+            <p>Teenagers might lose interest in activities they formerly enjoyed, experience a change in their weight, and start abusing substances. They may also take more risks, show less concern for their safety, and they are more likely to complete suicide than their younger counterparts when depressed. </p>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card >
+          <ion-card-header>
+            <ion-card-title>Symptoms/
+              Signs For Child</ion-card-title>
+          </ion-card-header>
+          <img src="assets/kids.jpg"/>
+          <ion-card-content>
+            <ul>
+              <li>Poor school performance</li>
+              <li>Persistent boredom or irritability</li>
+              <li>Frequent complaints of physical problems such as headaches and stomachaches</li>
+              </ul>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+    </ion-content>
+    

@@ -1,0 +1,41 @@
+ion-content.background {
+    --background: url(../../assets/health1.jpg) 0 0/100% 100% no-repeat;
+    
+    }
+ion-back-button{
+	font-style: italic;
+}
+
+ion-icon{
+	font-style: italic;
+	
+}
+
+#hidden-button{
+    height: 50%;
+    width: 50%;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+ion-item{
+    --background: rgba(255, 255, 255, 0.877);
+}
+
+ion-grid h3{
+    color: #000000;
+  }
+
+ion-item{
+    color: #000000;
+    //border-radius: 8px 8px;
+}
+
+ion-row div{
+    color: #000000;
+}
+
+ion-row a{
+    color:"dark"
+}
+

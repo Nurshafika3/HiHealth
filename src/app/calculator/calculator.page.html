@@ -1,0 +1,51 @@
+<ion-header transculent>
+  <ion-toolbar>
+   <ion-buttons slot="start">
+    <ion-back-button color="dark" defaultHref="home"></ion-back-button></ion-buttons>
+       <ion-title>BMI</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background">
+  <p class="ion-text-center">
+    <img src="assets/bmi.png" width=50%>
+  </p>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Weight (kg)</ion-label>
+      <ion-input type="number" [(ngModel)]="weight"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Height (cm)</ion-label>
+      <ion-input type="number" [(ngModel)]="height"></ion-input>
+    </ion-item>
+  </ion-list>
+  <div padding>
+    <ion-button 
+    class="ion-padding" 
+    expand="full" 
+    shape="round" 
+    (click)="calculateBMI()" 
+    [hidden] = "!calculate">
+     Calculate
+    </ion-button>
+    <ion-button 
+    class="ion-padding" 
+    expand="full" 
+    shape="round"  
+    (click)="clear()" 
+    [hidden] = "!clearbtn">
+     Clear
+    </ion-button>
+  </div>
+  <ion-card *ngIf="bmiValue"  [hidden]="!card">
+    <ion-card-header><ion-card-title>
+      BMI Calculation</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Your BMI: <br> Weight {{this.weight}} kg <br> Height {{this.height}} cm</p>
+      <p>BMI: {{bmiValue}}</p>
+      <p><strong>You are {{bmiMessage}}</strong></p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

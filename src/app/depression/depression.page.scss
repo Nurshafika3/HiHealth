@@ -1,0 +1,25 @@
+ion-content.background {
+    --background: url(../../assets/health1.jpg) 0 0/100% 100% no-repeat;
+
+    }
+ion-back-button{
+	font-style: italic;
+}
+
+ion-icon{
+	font-style: italic;
+	
+}
+
+#hidden-button{
+    height: 50%;
+    width: 50%;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+
+ion-card{
+    cursor: pointer;
+  
+}

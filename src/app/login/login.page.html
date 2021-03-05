@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background">
+  <p class="ion-text-center">
+    <img src="assets/health.png" width=80%>
+  </p>
+ 
+  <ion-grid>
+    <ion-row color="primary" justify-content-center>
+      <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+        <div padding>
+  <ion-item>
+    <ion-label>Email</ion-label>
+    <ion-input type="email" [(ngModel)]="user.email" required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Password</ion-label>
+    <ion-input type="password" [(ngModel)]="user.password" required></ion-input>
+  </ion-item>
+  </div>
+
+  <div padding>
+  <ion-button 
+  class="ion-padding" 
+  expand="full" 
+  shape="round" 
+  color="light" 
+  (click)="SignIn(user)">
+   Log in
+  </ion-button>
+</div>
+</ion-col>
+</ion-row>
+</ion-grid>
+<ion-row>
+  <div class="ion-text-center">
+If you don't have an account, please <a routerLink='/register'>
+  Register</a> first!
+  </div>
+</ion-row>
+</ion-content>

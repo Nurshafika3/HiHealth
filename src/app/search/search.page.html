@@ -1,0 +1,24 @@
+
+<ion-header>
+  <ion-toolbar>
+  	 <ion-buttons slot="start">
+    <ion-back-button color="dark" defaultHref="health"></ion-back-button></ion-buttons>
+    <ion-title>Search</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background">
+<ion-searchbar  
+color="dark" 
+animated
+[(ngModel)]="searchTerm"
+(ionChange)="setFilteredItems()"
+placeholder="Enter Diseases..."
+></ion-searchbar>
+ <!-- <ion-list color="dark"> -->
+   <div *ngFor="let item of items">
+    <ion-item [routerLink]="item.page" color="dark" >
+      {{ item.title}}</ion-item>
+   </div>
+<!-- </ion-list> -->
+</ion-content>

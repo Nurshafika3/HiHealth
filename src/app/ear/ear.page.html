@@ -1,0 +1,51 @@
+<ion-header transculent>
+  <ion-toolbar>
+   <ion-buttons slot="start">
+    <ion-back-button color="dark" defaultHref="health"></ion-back-button></ion-buttons>
+       <ion-title>Ear Infection</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background">
+  <ion-card color="light">
+  <ion-grid style="padding:0px;">
+      <ion-row class="ion-text-center">
+       <ion-col size="12" [routerLink]="['../whatear']" >
+        <ion-icon name="help-circle-sharp" color="primary" size="large"></ion-icon>
+         <p>What is Ear Infection?</p>
+       </ion-col>
+      </ion-row>
+    </ion-grid>
+      </ion-card>
+      <ion-card color="light">
+        <ion-grid style="padding:0px;">
+          <ion-row class="ion-text-center">
+        <ion-col size="12" [routerLink]="['../auear']" >
+          <ion-icon name="skull-sharp" color="primary" size="large"></ion-icon>
+           <p>Causes</p>
+         </ion-col>
+        </ion-row>
+      </ion-grid>
+         </ion-card>
+      <ion-card color="light">
+        <ion-grid style="padding:0px;">
+          <ion-row class="ion-text-center">
+      <ion-col size="12" [routerLink]="['../symptomear']" >
+        <ion-icon name="warning-sharp" color="primary" size="large"></ion-icon>
+         <p>Symptoms/Signs</p>
+       </ion-col>
+      </ion-row>
+    </ion-grid>
+      </ion-card>
+       <ion-card color="light">
+        <ion-grid style="padding:0px;">
+          <ion-row class="ion-text-center">
+      <ion-col size="12" [routerLink]="['../solutionear']" >
+        <ion-icon name="happy-sharp" color="primary" size="large"></ion-icon>
+         <p color="primary">Solution</p>
+       </ion-col>
+      </ion-row>
+    </ion-grid>
+       </ion-card>
+    
+  </ion-content>

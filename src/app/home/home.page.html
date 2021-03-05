@@ -1,0 +1,172 @@
+<ion-header transculent>
+  <ion-toolbar>
+    <ion-title>Home</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button color="dark" menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+   <ion-button (click)="signOut()">
+     <ion-icon  color="dark" slot="icon-only" name="log-out-sharp"></ion-icon>
+   </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background">
+ <p class="ion-text-center">
+  <img src="assets/health2.png" width=100%>
+</p>
+<ion-slides  [options]="option" class="ion-margin-top">
+<ion-slide>
+<ion-card>
+  <img src="assets/sleep.jpg"/>
+</ion-card>
+</ion-slide>
+
+<ion-slide>
+<ion-card>
+  <img src="assets/neck.jpg"/>
+</ion-card>
+</ion-slide>
+
+<ion-slide>
+<ion-card>
+  <img src="assets/breath.jpg"/>
+</ion-card>
+</ion-slide>
+
+<ion-slide>
+<ion-card>
+  <img src="assets/allergy.jpg"/>
+</ion-card>
+</ion-slide>
+
+</ion-slides>
+
+<ion-searchbar [routerLink]="['/search']" color="dark" animated></ion-searchbar>
+
+  <ion-card>
+    <img src="assets/asthma.jpg"/>
+    <ion-card-header>
+        <ion-card-subtitle>Common Diseases</ion-card-subtitle>
+        <ion-card-title>Asthma</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Asthma is a common disorder in which chronic inflammation of the bronchial tubes (bronchi) makes them swell, narrowing the airways. </p>
+      </ion-card-content>
+       <section>
+      <ion-button color="dark" shape="round" [routerLink]="['/asthma']" expand="block">Next<ion-icon name="caret-forward-outline"></ion-icon></ion-button>
+      </section>
+    </ion-card>
+
+  <ion-card>
+    <img src="assets/depression.jpg"/>
+    <ion-card-header>
+        <ion-card-subtitle>Common Diseases</ion-card-subtitle>
+        <ion-card-title>Depression</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Depression is an illness that involves the body, mood, and thoughts. The main types of depression are major depression, dysthymia, and bipolar disease (also called manic-depressive disease). </p>
+      </ion-card-content>
+       <section>
+      <ion-button color="dark" shape="round"  [routerLink]="['/depression']" expand="block">Next<ion-icon name="caret-forward-outline"></ion-icon></ion-button>
+      </section>
+    </ion-card>
+
+  <ion-card>
+    <img src="assets/allergy.jpg"/>
+    <ion-card-header>
+        <ion-card-subtitle>Common Diseases</ion-card-subtitle>
+        <ion-card-title>Allergies</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Allergens (allergy triggers) include pollens, dust mites, molds, dander, and certain foods. Hay fever, asthma, allergic eyes, allergic eczema, hives, and allergic shock are common allergy disorders. </p>
+      </ion-card-content>
+       <section>
+      <ion-button color="dark" shape="round"  [routerLink]="['/allergy']" expand="block">Next<ion-icon name="caret-forward-outline"></ion-icon></ion-button>
+      </section>
+    </ion-card>
+
+  <ion-card>
+    <img src="assets/breath.jpg"/>
+    <ion-card-header>
+        <ion-card-subtitle>Common Diseases</ion-card-subtitle>
+        <ion-card-title>Bad Breath</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Bad breath, medically known as halitosis, is a common problem. Bad breath is usually simple and preventable. Dietary factors as well as tobacco and alcohol use may all be factors in causing bad breath </p>
+      </ion-card-content>
+       <section>
+      <ion-button color="dark" shape="round"  [routerLink]="['/breath']" expand="block">Next<ion-icon name="caret-forward-outline"></ion-icon></ion-button>
+      </section>
+    </ion-card>
+
+  <ion-card>
+    <img src="assets/obesity.jpg"/>
+    <ion-card-header>
+        <ion-card-subtitle>Common Diseases</ion-card-subtitle>
+        <ion-card-title>Obesity</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p> In general, overweight and obesity indicate a weight greater than what is healthy. Obesity is a chronic condition defined by an excess amount of body fat. </p>
+      </ion-card-content>
+       <section>
+      <ion-button color="dark" shape="round"  [routerLink]="['/obesity']" expand="block">Next<ion-icon name="caret-forward-outline"></ion-icon></ion-button>
+      </section>
+    </ion-card>
+
+        <ion-card>
+    <img src="assets/dry.jpg"/>
+    <ion-card-header>
+        <ion-card-subtitle>Common Diseases</ion-card-subtitle>
+        <ion-card-title>Dry Eyes</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Dry eye syndrome (DES) also called dry eye, dry eye disease, or keratoconjunctivitis sicca (KCS) is a common condition of the tear film that affects a significant percentage of the population, especially those older than 40 years of age.</p>
+      </ion-card-content>
+       <section>
+      <ion-button color="dark" shape="round"  [routerLink]="['/eyes']" expand="block">Next<ion-icon name="caret-forward-outline"></ion-icon></ion-button>
+      </section>
+    </ion-card>
+
+        <ion-card>
+    <img src="assets/sleep.jpg"/>
+    <ion-card-header>
+        <ion-card-subtitle>Common Diseases</ion-card-subtitle>
+        <ion-card-title>Sleep Disorder</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Sleep is influenced by the circadian rhythms (regular body changes in mental and physical characteristics that occur in the course of about 24 hours).  </p>
+      </ion-card-content>
+       <section>
+      <ion-button color="dark" shape="round"  [routerLink]="['/sleep']" expand="block">Next<ion-icon name="caret-forward-outline"></ion-icon></ion-button>
+      </section>
+    </ion-card>
+
+        <ion-card>
+    <img src="assets/neck.jpg"/>
+    <ion-card-header>
+        <ion-card-subtitle>Common Diseases</ion-card-subtitle>
+        <ion-card-title>Neck Pain</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p> Neck pain can come from a number of disorders and diseases and can involve any of the tissues in the neck. </p>
+      </ion-card-content>
+       <section>
+      <ion-button color="dark" shape="round"  [routerLink]="['/neck']" expand="block">Next<ion-icon name="caret-forward-outline"></ion-icon></ion-button>
+      </section>
+    </ion-card>
+    <ion-fab horizontal="end" vertical="bottom" slot="fixed">
+      <ion-fab-button>
+        <ion-icon md="caret-back" ios="chevron-back-circle-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-list side="start">
+        <ion-fab-button color="light">
+          <ion-icon name="accessibility-sharp" routerLink='/calculator'></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button color="light">
+          <ion-icon name="brush-sharp" routerLink='/diet'></ion-icon>
+        </ion-fab-button>
+      </ion-fab-list>
+    </ion-fab>
+</ion-content>

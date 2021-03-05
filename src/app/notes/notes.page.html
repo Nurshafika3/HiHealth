@@ -1,0 +1,119 @@
+<ion-header transculent>
+  <ion-toolbar>
+   <ion-buttons slot="start">
+    <ion-back-button color="dark" defaultHref="diet"></ion-back-button></ion-buttons>
+       <ion-title>Notes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background">
+
+  <div class="ion-padding">
+     <ion-item>
+      <ion-label class="ion-text-center">Start Date</ion-label>
+        <ion-datetime value="2021-01-01" placeholder="Select Date"></ion-datetime>
+      </ion-item>
+
+<ion-list>
+  <ion-radio-group [(ngModel)]="notes.breakfast">
+    <ion-list-header>
+      <ion-label>Breakfast</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label>Salad</ion-label>
+      <ion-radio value="Salad"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Bread</ion-label>
+      <ion-radio value="Bread"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Oatmeal</ion-label>
+      <ion-radio value="Oatmeal"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Eggs</ion-label>
+      <ion-radio value="Eggs"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Yogurts</ion-label>
+      <ion-radio value="Yogurts"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Berries</ion-label>
+      <ion-radio value="Berries"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+</ion-list>
+<ion-list>
+  <ion-radio-group [(ngModel)]="notes.lunch">
+    <ion-list-header>
+      <ion-label>Lunch</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label>Soups</ion-label>
+      <ion-radio value="Soups"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Veggies</ion-label>
+      <ion-radio value="Veggies"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Grains</ion-label>
+      <ion-radio value="Grains"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Fish</ion-label>
+      <ion-radio value="Fish"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Beans</ion-label>
+      <ion-radio value="Beans"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+</ion-list>
+<ion-list>
+  <ion-radio-group name="auto" value="dinner">
+    <ion-list-header>
+      <ion-label>Dinner</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label>Whole Eggs</ion-label>
+      <ion-radio value="WholeEggs"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Salmon</ion-label>
+      <ion-radio value="Salmon"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Tuna</ion-label>
+      <ion-radio value="Tuna"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Boiled Potatoes</ion-label>
+      <ion-radio value="Potato"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Beans and Legumes</ion-label>
+      <ion-radio value="Beans"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Leafy Green</ion-label>
+      <ion-radio value="Green"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+</ion-list>
+   <ion-grid-fixed>
+    <ion-row>
+      <ion-col size="12">
+      <ion-button (click)="Save(notes)" routerLink="/diet" expand="block" color="dark">
+        <ion-icon slot="start" name="send"></ion-icon>
+        Save
+      </ion-button>
+    </ion-col>
+
+  </ion-row>
+  </ion-grid-fixed>
+   
+    </div>  
+</ion-content>

@@ -1,0 +1,50 @@
+<ion-header transculent>
+  <ion-toolbar>
+   <ion-buttons slot="start">
+    <ion-back-button color="dark" defaultHref="home"></ion-back-button></ion-buttons>
+       <ion-title>Neck Pain</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding class="background">
+  <ion-card color="light">
+  <ion-grid style="padding:0px;">
+      <ion-row class="ion-text-center">
+       <ion-col size="12" [routerLink]="['../whatneck']" >
+        <ion-icon name="help-circle-sharp" color="primary" size="large"></ion-icon>
+         <p>What is Neck Pain?</p>
+       </ion-col>
+      </ion-row>
+    </ion-grid>
+      </ion-card>
+      <ion-card color="light">
+        <ion-grid style="padding:0px;">
+          <ion-row class="ion-text-center">
+        <ion-col size="12" [routerLink]="['../auneck']" >
+          <ion-icon name="skull-sharp" color="primary" size="large"></ion-icon>
+           <p>Causes</p>
+         </ion-col>
+        </ion-row>
+      </ion-grid>
+         </ion-card>
+      <ion-card color="light">
+        <ion-grid style="padding:0px;">
+          <ion-row class="ion-text-center">
+      <ion-col size="12" [routerLink]="['../symptomneck']" >
+        <ion-icon name="warning-sharp" color="primary" size="large"></ion-icon>
+         <p>Symptoms/Signs</p>
+       </ion-col>
+      </ion-row>
+    </ion-grid>
+      </ion-card>
+       <ion-card color="light">
+        <ion-grid style="padding:0px;">
+          <ion-row class="ion-text-center">
+      <ion-col size="12" [routerLink]="['../solutionneck']" >
+        <ion-icon name="happy-sharp" color="primary" size="large"></ion-icon>
+         <p color="primary">Solution</p>
+       </ion-col>
+      </ion-row>
+    </ion-grid>
+       </ion-card>
+    
+  </ion-content>
